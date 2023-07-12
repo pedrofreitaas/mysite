@@ -70,3 +70,5 @@ node_modules/
 index2.html
 
 .firebaserc
+
+./public/imgs/*

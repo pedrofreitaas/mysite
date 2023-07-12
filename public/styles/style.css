@@ -7,57 +7,64 @@
 }
 
 body {
-    background-color: #f1e7e700;
-    width: 100%; height: 100%;
+    border-top: 30px solid #014916df;
+    border-bottom: 30px solid #014916df;
+
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0; */
 }
 
-.upper_strip, .down_strip {
-    width: 100%; height: 50px;
+#my_picture {
+    width: auto; height: 160px;
+    border: 2px solid;
+    border-radius: 50%;
 }
 
-.upper_strip {
-    position: absolute;
-    top: 0px; left: 0px;
-    background: linear-gradient(to bottom, #8c24e7, #dccfcf00);
-    border-bottom-left-radius: 40%; border-bottom-right-radius: 20%;
+#calculator_img {
+    width: 100px; height: auto;
 }
 
-.down_strip {
-    border-top-left-radius: 40%; border-top-right-radius: 20%;
-    position: absolute;
-    bottom: 0%;
-    background: linear-gradient(to top, #8c24e7, #dccfcf00); 
+#to-do_list_img {
+    width: 100px; height: auto;
 }
 
-.box {
+.tab{
+    display: inline-block;
+    margin-left: 4em;
+}
+
+.my_picture_box {
+    margin: 5px; padding: 5px;
     position: relative;
-    width: 200px;
-    margin: 5px;
-    padding: 10px;
+    top: -30px;    
+
+    width: 40%; height:max-content;
+    display: flex;
+
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.texts {
+    display: block;
+    padding-top: 25px; padding-left: 10px;
+}
+
+#github_link, #linkedin_link {
+    text-decoration: none;
+}
+
+.projects_show {
+    display: flex;
+    width: auto;
+    margin: 10px;
+}
+
+.project_show {
+    margin: 10px; padding: 10px;
+    background-color: rgb(254, 254, 254);
     border-radius: 10%;
-    text-align: center;
-    
-    background-color: rgb(111, 111, 0);
-
-    animation-name: zububalu;
-    animation-duration: .75s;
-}
-
-.box > h3 {
-    font-size: 15px;
-}
-
-.curiosbutton {
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.curiosbutton > i {
-    font-size: 20px;
-}
-
-@keyframes zububalu {
-    from { transform: scale(0) };
-    to { transform: scale(100%) };
+    box-shadow: 1px 2px rgb(200, 199, 199);
 }

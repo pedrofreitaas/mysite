@@ -1,6 +1,8 @@
 <html>
     <head> 
         <title> mysite </title>
+        <link rel="icon" href="imgs/user-solid.svg">
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +13,66 @@
     </head>
     
     <body>
-        <div class="upper_strip"></div>
+        <div class="my_picture_box">
+            <img id="my_picture" src="imgs/insta_pic.jpg" alt="my_picture"> 
+            <div class="texts">
+                <p id="my_desc"> 
+                    Pedro Henrique Freitas Guedes Oliveira 
+                    <br/>
+                    UFMG - Universidade Federal de Minas Gerais.
+                </p>
 
-        <div class="box">
-            <h3> Caixinha Bacana </h3>
-            <button class="curiosbutton" onclick="rotateParent(this);"> 
-                <i class="fa-solid fa-thumbs-up fa-5x"></i>
-            </button>
+                <br/>
+
+                <p id="my_contacts">
+                    freitaas.pedro@gmail.com <br/>
+                    (31) 97555-7009
+                </p>
+
+                <br/>
+
+                <a id="github_link" target="_blank" href="https://github.com/pedrofreitaas" target="_blank"> 
+                    <i class="fa-brands fa-github"></i> Github 
+                </a>
+
+                <br/><br/>
+                
+                <a id="linkedin_link" target="_blank" href="https://www.linkedin.com/in/pedrohenriquefreitasguedesoliveira/" target="_blank"> 
+                    <i class="fa-brands fa-linkedin"></i> Linkedin 
+                </a>
+
+            </div>
         </div>
 
-        <div class="down_strip"></div>
+        <div class="projects_show">
+                
+            <div class="project_show">
+                <p> action game </p>
+                <a href="https://www.youtube.com/watch?v=v7JpqhdFdw0"> pg video 1 </a>
+                <a href="https://www.youtube.com/watch?v=aBKu4UhDAYw"> pg video 2 </a>
+            </div>
+             
+            <div class="project_show">
+                <p> calculator </p>
+                <img id="calculator_img" src="https://camo.githubusercontent.com/0cd1100b6d0b056c74762c77f93c57e6333a112920fd72c84f9d2f24b68d80d8/68747470733a2f2f692e696d6775722e636f6d2f44727864664d6a2e706e67">
+            </div>
+
+            <div class="project_show">
+                <p> pass manager </p>
+                <a href="https://www.youtube.com/watch?v=umdSgMQQEw4"> pass_manager video </a>
+            </div>
+
+            <div class="project_show">
+                <p> to-do list </p>
+                <img id="to-do_list_img" src="https://camo.githubusercontent.com/ef830104a21e6527634f7a4f63e41dab2fc4e8afbf81eaa8f88cff093a07d3a7/68747470733a2f2f692e696d6775722e636f6d2f59487078574a362e706e67">
+            </div>
+
+            <div class="project_show">
+                <p> digiting game </p>
+                <a href="https://www.youtube.com/watch?v=eIz0gkBpHJ4"> digit game video </a>
+            </div>
+
+        </div>
     </body>
 
 </html>

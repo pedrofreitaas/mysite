@@ -11,9 +11,3 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-
-export function delayedConsoleLog( val, time_ms ) {
-    setTimeout( () => {
-        console.log(val);
-    }, time_ms);
-};
