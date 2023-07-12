@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f1e7e700;
+    width: 100%; height: 100%;
+}
+
+.upper_strip, .down_strip {
+    width: 100%; height: 50px;
+}
+
+.upper_strip {
+    position: absolute;
+    top: 0px; left: 0px;
+    background: linear-gradient(to bottom, #8c24e7, #dccfcf00);
+    border-bottom-left-radius: 40%; border-bottom-right-radius: 20%;
+}
+
+.down_strip {
+    border-top-left-radius: 40%; border-top-right-radius: 20%;
+    position: absolute;
+    bottom: 0%;
+    background: linear-gradient(to top, #8c24e7, #dccfcf00); 
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+    
+    background-color: rgb(111, 111, 0);
+
+    animation-name: zububalu;
+    animation-duration: .75s;
+}
+
+.box > h3 {
+    font-size: 15px;
+}
+
+.curiosbutton {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.curiosbutton > i {
+    font-size: 20px;
+}
+
+@keyframes zububalu {
+    from { transform: scale(0) };
+    to { transform: scale(100%) };
+}
