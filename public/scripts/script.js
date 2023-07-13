@@ -1,7 +1,4 @@
-function rotateParent( call_html_component ) {
-    let number = 10;
-
-    setTimeout( () => {
-        call_html_component.parentElement.style.transform = "rotate(30%)";
-    }, 3000);
-};
+function changeSize( component ) {
+    component.style.transform("scale(1.5)");
+    console.log("jksajksajk");
+}

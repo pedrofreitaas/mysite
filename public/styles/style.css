@@ -10,24 +10,11 @@ body {
     border-top: 30px solid #014916df;
     border-bottom: 30px solid #014916df;
 
-    background-image: url("../imgs/background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 0; */
+    width: fit-content; height: fit-content;
 }
 
-#my_picture {
-    width: auto; height: 160px;
-    border: 2px solid;
-    border-radius: 50%;
-}
-
-#calculator_img {
-    width: 100px; height: auto;
-}
-
-#to-do_list_img {
-    width: 100px; height: auto;
+#my_pic_svg {
+    width: 150px; height: auto;
 }
 
 .tab{
@@ -38,7 +25,7 @@ body {
 .my_picture_box {
     margin: 5px; padding: 5px;
     position: relative;
-    top: -30px;    
+    top: -25px;    
 
     width: 40%; height:max-content;
     display: flex;
@@ -48,8 +35,18 @@ body {
 }
 
 .texts {
+    position: relative;
+    top: 20px; left: 5px;
+    padding: 5px;
+    
     display: block;
-    padding-top: 25px; padding-left: 10px;
+    padding-left: 10px;
+
+    border-top-right-radius: 5%; border-bottom-right-radius: 5%;
+    width: fit-content; height: fit-content;
+
+    border-left: 4px solid #014916df;
+    background-color: #8db99adf;
 }
 
 #github_link, #linkedin_link {
@@ -58,13 +55,52 @@ body {
 
 .projects_show {
     display: flex;
-    width: auto;
+    width: fit-content;
     margin: 10px;
 }
 
 .project_show {
+    width: 600px; height: fit-content;
     margin: 10px; padding: 10px;
-    background-color: rgb(254, 254, 254);
-    border-radius: 10%;
-    box-shadow: 1px 2px rgb(200, 199, 199);
+
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+
+    text-align: center;
+}
+
+.project_show > h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project_show > img {
+    width: 100%; height: 300px;
+    border-radius: 2px;
+    box-shadow: 2px 2px rgb(60, 59, 59);
+    margin: 2px; margin-top: 10px;
+}
+
+.project_show > iframe {
+    margin: 2px; margin-top: 10px;
+    width: 100%; height: 300px;
+}
+
+.project_show > ul {
+    margin-top: 5px; margin-left: 30px;
+    text-align: justify;
+}
+
+.action_game_video_link {
+    text-decoration: none;
+}
+
+.video_demo_link {
+    border-radius: 10px;
+}
+
+#link_page2 {
+    position: absolute;
+    left: 1%; bottom: 1%;
+    text-decoration: none;
 }
