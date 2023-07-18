@@ -1,83 +1,204 @@
 <html>
     <head> 
-        <title> mysite </title>
+        <title> pedrofreitaas </title>
         <link rel="icon" href="imgs/user-solid.svg">
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel='stylesheet' href='styles/style.css'/>
-        <script type="module" src="scripts/main.js" defer></script>
-        <script src="scripts/script.js" defer></script>
+
+        <script type="module" defer>
+            import * as app from "./scripts/app.js";
+            window.app = app;
+        </script>
+
         <script src="https://kit.fontawesome.com/2aba07abb1.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
-        <div class="my_picture_box">            
-            <svg id="my_pic_svg" viewBox="0 0 139 174" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path d="M139 69C139 120.362 125.557 174 69.5 174C13.4431 174 0 120.362 0 69C0 17.6375 34 32 69.5 0C108 34 139 17.6375 139 69Z" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_1_15" transform="matrix(0.000326264 0 0 0.000260636 0 -0.0337832)"/>
-                </pattern>
-                <image id="image0_1_15" width="3065" height="4096" xlink:href="imgs/insta_pic.jpg"></image>
-                </defs>
-            </svg>
-            <div class="texts">
-                <p id="my_desc"> 
-                    Pedro Henrique Freitas Guedes Oliveira 
-                    <br/>
-                    UFMG - Universidade Federal de Minas Gerais.
-                </p> <br/>
-                <p id="my_contacts">
-                    freitaas.pedro@gmail.com <br/>
-                    (31) 97555-7009
-                </p> <br/>
-                <a id="github_link" target="_blank" href="https://github.com/pedrofreitaas" target="_blank"> 
-                    <i class="fa-brands fa-github"></i> Github 
-                </a> <br/><br/>
-                <a id="linkedin_link" target="_blank" href="https://www.linkedin.com/in/pedrohenriquefreitasguedesoliveira/" target="_blank"> 
-                    <i class="fa-brands fa-linkedin"></i> Linkedin 
+        <div class="page_heading">
+            <div class="my_picture_box">            
+                <svg id="my_pic_svg" viewBox="0 0 139 174" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M139 69C139 120.362 125.557 174 69.5 174C13.4431 174 0 120.362 0 69C0 17.6375 34 32 69.5 0C108 34 139 17.6375 139 69Z" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1_15" transform="matrix(0.000326264 0 0 0.000260636 0 -0.0337832)"/>
+                    </pattern>
+                    <image id="image0_1_15" width="3065" height="4096" xlink:href="imgs/insta_pic.jpg"></image>
+                    </defs>
+                </svg>
+
+                <div class="texts">
+                    <p id="my_desc"> 
+                        Pedro Henrique Freitas Guedes Oliveira 
+                        <br/>
+                        UFMG - Universidade Federal de Minas Gerais.
+                    </p> <br/>
+                    <p id="my_contacts">
+                        freitaas.pedro@gmail.com <br/>
+                        (31) 97555-7009
+                    </p> <br/>
+                    <a class="github_link" target="_blank" href="https://github.com/pedrofreitaas" target="_blank"> 
+                        <i class="fa-brands fa-github"></i> Github 
+                    </a> <br/><br/>
+                    <a class="linkedin_link" target="_blank" href="https://www.linkedin.com/in/pedrohenriquefreitasguedesoliveira/" target="_blank"> 
+                        <i class="fa-brands fa-linkedin"></i> Linkedin 
+                    </a>
+                </div>
+            </div>
+
+            <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>
+
+            <div class="other_minor_projects">         
+                <h3>
+                    Minor Projects:
+                </h3>
+
+                <span class="tab"></span>
+
+                <a target="_blank" href="https://github.com/pedrofreitaas/audio_transcriptor" target="_blank"> 
+                    <i class="fa-brands fa-github"></i> Audio Transcriptor.
                 </a>
             </div>
         </div>
 
         <div class="projects_show">
+            <div class="project_show">
+                <div class="project_show_heading">
+                    <div class="project_link_icons">
+                        <a class="project_link_github" target="_blank" href="https://github.com/pedrofreitaas/digiting_game" target="_blank"> 
+                            <i class="fa-brands fa-github"></i> 
+                        </a>
+
+                        <a class="project_link_ytb" target="_blank" href="https://www.youtube.com/embed/eIz0gkBpHJ4?showinfo=0">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="project_show_title">
+                        Digiting Game
+                    </h3>
+                </div>
+
+                <img src="imgs/digiting_game.jpg">
+
+                <ul> 
+                    <li> Language used: Python. </li>
+                    <li> Uses an API to retrieve words, and turn them into enemies for the game. </li>
+                    <li> Has different enemies, that can reproduce or have more than one life. </li>
+                    <li> Uses python's pygame library. </li>
+                    <li> The player has three lifes and a score, the goal is the kill as many enemies as possible, by digiting their words, without getting hit. </li>
+                </ul>
+            </div>
+
+            <div class="project_show">
+                <div class="project_show_heading">
+                    <div class="project_link_icons">
+                        <a class="project_link_ytb" target="_blank" href="https://www.youtube.com/watch?v=v7JpqhdFdw0&t=2s">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        
+                        <a class="project_link_ytb" target="_blank" href="https://www.youtube.com/watch?v=aBKu4UhDAYw">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>  
+                        
+                        <a class="project_link_github" target="_blank" href="https://github.com/pedrofreitaas/pygame">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="project_show_title">
+                        Action Game 
+                    </h3>
+                </div>
                 
-            <div class="project_show" onclick="changeSize(this)">
-                <h3> Action Game </h3>
                 <img class="action_game_img" src="imgs/action_game_print.jpg">
                 <ul>
                     <li> Combat with differente abilities, such as: meteor, hookax, shift. </li>
                     <li> Four completely different enemies, with different combat inteligences and animations. They are: Water Priestess, Earth Monk, Ronin and the Forest Wolf.</li>
                     <li> There is a global map to explore, with 4 different borders to visit. </li>
                     <li> There are chests to open, that offer new powers for the player. </li>
-                </ul>
-                <a target="_blank" href="https://www.youtube.com/watch?v=v7JpqhdFdw0&t=2s" class="video_demo_link">LINK1</a>
-                <a target="_blank" href="https://www.youtube.com/watch?v=aBKu4UhDAYw" class="video_demo_link">LINK2</a>                  
+                    <li> Language used: Python. </li>
+                </ul>         
             </div>
-             
-            <div class="project_show">
-                <h3> Calculator </h3>
-                <img id="calculator_img" src="https://camo.githubusercontent.com/0cd1100b6d0b056c74762c77f93c57e6333a112920fd72c84f9d2f24b68d80d8/68747470733a2f2f692e696d6775722e636f6d2f44727864664d6a2e706e67">
-            </div>
-
-            <div class="project_show">
-                <h3> Calculator </h3>
-                <iframe src="https://www.youtube.com/embed/umdSgMQQEw4" frameborder="1" ></iframe>
-            </div>
-
-            <div class="project_show">
-                <h3> To-do List </h3>
-                <img id="to-do_list_img" src="https://camo.githubusercontent.com/ef830104a21e6527634f7a4f63e41dab2fc4e8afbf81eaa8f88cff093a07d3a7/68747470733a2f2f692e696d6775722e636f6d2f59487078574a362e706e67">
-            </div>
-
-            <div class="project_show">
-                <h3> Digiting Game </h3>
-                <iframe src="https://www.youtube.com/embed/eIz0gkBpHJ4" frameborder="1"></iframe>
-            </div>
-
         </div>
+
+        <div class="projects_show">
+            <div class="project_show">
+                <div class="project_show_heading">
+                    <div class="project_link_icons">
+                        <a class="project_link_github" target="_blank" href="https://github.com/pedrofreitaas/password-manager"> 
+                            <i class="fa-brands fa-github"></i> 
+                        </a>
+                        <a class="project_link_ytb" target="_blank" href="https://www.youtube.com/embed/umdSgMQQEw4">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="project_show_title">
+                        Password Manager
+                    </h3>
+                </div>
+                
+                <img src="imgs/pass_manager.PNG">
+                <ul>
+                    <li> Simple password manager that, based on a master key, handles and storages passwords for a user. </li>
+                    <li> Uses encryption based in the Fernet python's module. </li>
+                    <li> Uses a hidden shelve to storage the passwords encrypted versions. </li>
+                    <li> Can create a password randomly, based in the users configurations. </li>
+                    <li> Suports: input/creation/deletion/list of passwords, and change of configurations, all based in a master key.</li>
+                    <li> Language used: Python </li>
+                </ul>
+            </div>
+
+            <div class="project_show">
+                <div class="project_show_heading">
+                    <div class="project_link_icons">
+                        <a class="project_link_github" target="_blank" href="https://github.com/pedrofreitaas/simple_to_do_list" target="_blank"> 
+                            <i class="fa-brands fa-github"></i> 
+                        </a>
+                    </div>
+                    
+                    <h3 class="project_show_title">
+                        To-do List
+                    </h3>
+                </div>
+
+                <img id="to-do_list_img" src="https://camo.githubusercontent.com/ef830104a21e6527634f7a4f63e41dab2fc4e8afbf81eaa8f88cff093a07d3a7/68747470733a2f2f692e696d6775722e636f6d2f59487078574a362e706e67">
+                <ul> 
+                    <li> Languages used: HTML, CSS, Js. </li>
+                    <li> Supports task insertion, removal and highlight, clear tasks and mark task as done. </li>
+                    <li> Uses localStorage to storage information even if the user leaves the page. </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="project_show">
+                <div class="project_show_heading">
+                    <div class="project_link_icons">
+                        <a class="project_link_ytb" target="_blank" href="https://www.youtube.com/watch?v=B8c57U5HdgQ">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>                        
+                        <a class="project_link_github" target="_blank" href="https://github.com/pedrofreitaas/calculator">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <h3 class="project_show_title">
+                        Calculator
+                    </h3>
+                </div>
+
+                <img id="calculator_img" src="https://camo.githubusercontent.com/0cd1100b6d0b056c74762c77f93c57e6333a112920fd72c84f9d2f24b68d80d8/68747470733a2f2f692e696d6775722e636f6d2f44727864664d6a2e706e67">
+                <ul> 
+                    <li> Suports operation with integers and decimals. </li>
+                    <li> Implemented operations: subtractiom, adition, multiplication, division, rooting and exponentiation. </li>
+                    <li> Languages used: Js, HTML and CSS. </li>
+                </ul>
+            </div>
+
     </body>
 
 </html>
